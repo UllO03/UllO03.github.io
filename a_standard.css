@@ -93,3 +93,23 @@ p a{
 .hidden{
     cursor: default;
 }
+.tb{
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    width: 30px;
+    opacity: 0.5;
+  }
+  .tb:hover{
+    opacity: 1;
+  }
+  .bb{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    opacity: 0.5;
+  }
+  .bb:hover{
+    opacity: 1;
+  }
