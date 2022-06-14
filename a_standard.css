@@ -120,8 +120,15 @@ p a{
     text-decoration: none;
 }
 
-.hidden{
-    cursor: default;
+a.hidden:hover{
+    position: relative;
+}
+a.hidden span{
+    display: none;
+}
+a.hidden:hover span{
+    display: contents;
+    position: absolute;
 }
 .tb{
     position: fixed;
