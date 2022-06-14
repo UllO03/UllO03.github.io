@@ -1,4 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Inconsolata:wght@500&family=Poor+Story&family=Spline+Sans+Mono&display=swap');
+@keyframes neon{
+    from{
+      text-shadow: 0 0 10px #ffffff99,
+                   0 0 20px #ffffff99,
+                   0 0 30px #ffffff99,
+                   0 0 40px aqua,
+                   0 0 60px aqua,
+                   0 0 80px aqua,
+                   0 0 110px aqua,
+                   0 0 140px aqua;
+    }
+    to{
+      text-shadow: 0 0 5px #ffffff99,
+                   0 0 10px #ffffff99,
+                   0 0 15px #ffffff99,
+                   0 0 20px aqua,
+                   0 0 25px aqua,
+                   0 0 35px aqua,
+                   0 0 45px aqua, 
+                   0 0 60px aqua;
+    }
+  }
 * {
     box-sizing: border-box;
 }
@@ -22,6 +44,7 @@ body {
   
 .header h1 {
     font-size: 40px;
+    text-shadow: 2px 2px 2px #777;
     font-family: 'Spline Sans Mono', monospace;
 }
   
@@ -37,8 +60,10 @@ body {
     text-align: center;
     padding: 4px 12px;
     text-decoration: none;
-    border-right: 3px solid white;
+    border-right: 0px solid white;
     margin: 12px 0px;
+    transition: all 0.5s;
+    animation: neon 1.5s ease-in-out infinite alternate; 
 }
 .nav a:hover{
     color: aqua;
@@ -58,6 +83,9 @@ body {
     width: 25%;
     padding-left: 20px;
 }
+.right :hover{
+    border: 2px dashed aquamarine;
+}
 .right h3{
     font-family: 'Poor Story', cursive;
 }
@@ -68,7 +96,9 @@ body {
     margin-top: 20px;
     font-size: 20px;
 }
-
+.content :hover{
+    border: 0px solid white;
+}
 .content p{
     font-family: 'Gowun Batang', serif;
 }
